@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flocker Information Display</title>
+</head>
+<body>
+<h1>Select a flocker to display their information:</h1>
+
+<!-- Dropdown to select a person -->
+<select id="flockerDropdown" onchange="displayInfo()">
+    <option value="">Select a flocker</option>
+    <option value='{"age": 21, "gender": "Female", "height": "5ft 4in"}'>Kiwi</option>
+    <option value='{"age": 32, "gender": "Male", "height": "5ft 6in"}'>Beardo</option>
+    <option value='{"age": 39, "gender": "Male", "height": "6ft"}'>Jag</option>
+    <option value='{"age": 25, "gender": "Female", "height": "5ft 5in"}'>Patrice</option>
+</select>
+
+<!-- Area to display the information -->
+<p id="infoDisplay">Information will be displayed here</p>
+
+<!-- Link to external JavaScript file -->
+<script src="script.js"></script>
+</body>
+</html>
